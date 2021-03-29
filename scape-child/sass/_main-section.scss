@@ -61,8 +61,8 @@ div#main {
         display: flex;
         align-items: center;
         height: auto !important;
-        border-top: 1px solid $color-gray3;
-        border-bottom: 1px solid $color-gray3;
+        border-top: 1px solid $color-lightgray;
+        border-bottom: 1px solid $color-lightgray;
         @media only screen and (max-width: 1000px) {
             display: none !important;
         }
