@@ -20,6 +20,23 @@ div#main {
     }
 }
 
+.header-static {
+    .inp--search {
+        input {
+            padding-left: 50px;
+            width: 100%;
+            box-sizing: border-box;
+        }
+    }
+    .navbar__cart {
+        .icon {
+            svg {
+                fill: $color-white;
+            }
+        }
+    }
+}
+
 .header-shirtwolesaler {
     &.header_sticky_active {
         a.wtbx_header_logo {
