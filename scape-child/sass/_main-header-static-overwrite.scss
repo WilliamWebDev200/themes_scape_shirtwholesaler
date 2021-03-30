@@ -6523,12 +6523,13 @@
         position: absolute;
         height: 50px;
         width: 100%;
-        padding: 10px;
+        // padding: 10px;
         background: #f3f3f3;
         font-size: 16px;
         border: 1px solid #e6e6e6;
         padding-left: 50px;
-        border-radius: 5px
+        border-radius: 5px;
+        padding: 0;
     }
     @media (max-width: 768px) {
         .inp--search__input {
@@ -6540,20 +6541,17 @@
         border-color: #FF6713
     }
     .inp--search__button {
-        display: -webkit-box;
-        display: -ms-flexbox;
         display: flex;
         position: absolute;
         left: 0;
         top: 0;
         height: 100%;
         width: 50px;
-        -webkit-box-pack: center;
-        -ms-flex-pack: center;
         justify-content: center;
-        -webkit-box-align: center;
-        -ms-flex-align: center;
-        align-items: center
+        align-items: center;
+        background: transparent !important;
+        height: 100%;
+        box-shadow: none;
     }
     .inp--search__button svg {
         fill: #6B6B6B

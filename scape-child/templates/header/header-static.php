@@ -22,16 +22,18 @@
 <div class="navbar__search">
 <form name="frmsearch" id="searchfrm" class="searchfrm" method="get" action="https://newswc.shirtwholesaler.com/styles">
 
-<div class="inp--search">
-<input class="inp inp--search__input" type="search" placeholder="Search Products, Brands" name="q" id="q" value="" autocomplete="off" maxlength="40" onkeypress="if (!window.__cfRLUnblockHandlers) return false; return onlyAlphabets(event,this);">
-<button type="submit" class="btn inp--search__button" alt="Minimum 3 character" title="Minimum 3 character">
-<span class="icon">
-<svg width="19" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
-<path d="M18.66 16.66l-5.332-5.116a6.764 6.764 0 001.62-4.378c0-3.844-3.258-6.97-7.264-6.97C3.679.195.42 3.321.42 7.165c0 3.843 3.259 6.97 7.264 6.97a7.417 7.417 0 004.563-1.554l5.331 5.115c.15.144.392.144.54 0l.541-.518a.357.357 0 000-.52zM7.683 12.669c-3.162 0-5.735-2.469-5.735-5.503 0-3.035 2.573-5.503 5.735-5.503 3.163 0 5.735 2.468 5.735 5.503 0 3.034-2.572 5.503-5.735 5.503z"></path>
-</svg>
-</span>
-</button>
-</div>
+    <div class="inp--search">
+             <input class="inp inp--search__input" type="search" placeholder="Search Products, Brands" name="q" id="q" value="<?php echo (isset($_REQUEST['q']) && !empty($_REQUEST['q']) ? $_REQUEST['q'] : ''); ?>" autocomplete="off" maxlength="40" onkeypress="return onlyAlphabets(event,this);" />
+             <button type="submit" class="btn inp--search__button" alt="Minimum 3 character" title="Minimum 3 character">
+                 <span class="icon">
+                     <svg width="19" height="18" viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M18.66 16.66l-5.332-5.116a6.764 6.764 0 001.62-4.378c0-3.844-3.258-6.97-7.264-6.97C3.679.195.42 3.321.42 7.165c0 3.843 3.259 6.97 7.264 6.97a7.417 7.417 0 004.563-1.554l5.331 5.115c.15.144.392.144.54 0l.541-.518a.357.357 0 000-.52zM7.683 12.669c-3.162 0-5.735-2.469-5.735-5.503 0-3.035 2.573-5.503 5.735-5.503 3.163 0 5.735 2.468 5.735 5.503 0 3.034-2.572 5.503-5.735 5.503z" />
+                     </svg>
+                 </span>
+             </button>
+
+         </div>
+
 <div id="ajax_response" style="display: none;"></div>
 
 
