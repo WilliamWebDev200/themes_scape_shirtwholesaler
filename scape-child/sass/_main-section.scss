@@ -585,6 +585,15 @@ header#site-header {
             }
         }
     }
+    &__credit {
+        @media only screen and (max-width: 600px) {
+            .wtbx_text_element_inner {
+                p {
+                    text-align: left !important;
+                }
+            }
+        }
+    }
 }
 
 .page-header-wrapper {
