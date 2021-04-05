@@ -21,7 +21,9 @@ $link_url = 'https://newswc.shirtwholesaler.com/';
     </div>
     </button>
     <a href="<?php echo $link_url ; ?>" class="navbar__logo mr-auto">
-    <img src="https://newswc.shirtwholesaler.com/images/new/shirtwholesaler_logo.png" alt="Shirtwholesaler">
+
+    <!-- <img src="https://newswc.shirtwholesaler.com/images/new/shirtwholesaler_logo.png" alt="Shirtwholesaler"> -->
+    <img src="<?php echo WTBX_URI . '/library/images/shirtwholesaler_logo.png' ?>" alt="Shirtwholesaler">
     </a>
 </div>
 
