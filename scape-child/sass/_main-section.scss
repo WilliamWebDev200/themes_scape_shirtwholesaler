@@ -448,6 +448,9 @@ header#site-header {
     padding-top: 50px;
     .wtbx_row_content.clearfix {
         max-width: 95%;
+        @media only screen and (max-width: 600px) {
+            max-width: 100%;
+        }
     }
     .widget.widget_nav_menu {
         h2.widgettitle {
@@ -459,6 +462,18 @@ header#site-header {
             text-align: left;
             a {
                 max-width: 350px;
+            }
+        }
+    }
+    &__container {
+        @media only screen and (max-width: 600px) {
+            .wtbx_inner_row_content_inner.clearfix {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .shirtwolesaler-footer__menu {
+                max-width: 50%;
+                flex: 0 0 50%;
             }
         }
     }
