@@ -56,7 +56,7 @@ if ( !empty($layout_js_styles) ) {
 		<?php if ( in_array( $wtbx_layout['sidebar'], array('sidebar_left', 'sidebar_left_sticky', 'sidebar_right', 'sidebar_right_sticky') ) && $wtbx_layout['sidebar_widgetarea'] !== 'none' && is_active_sidebar($wtbx_layout['sidebar_widgetarea']) )  : ?>
 
             <div id="sidebar" class="<?php echo esc_attr($wtbx_layout['sidebar_skin']), esc_attr($wtbx_layout['sidebar_sticky']); ?>">
-                <div class="page-sidebar">
+                <div class="page-sidebar" id="modal-box">
 					<div class="widget-area">
 						<?php dynamic_sidebar($wtbx_layout['sidebar_widgetarea']); ?>
 					</div>
@@ -66,5 +66,10 @@ if ( !empty($layout_js_styles) ) {
 		<?php endif; ?>
 
 	</div><!-- #container -->
+
+
+<div class="mobile-control">
+		<?php echo do_shortcode('[content_block slug=home-mobile-menu]'); ?>
+</div>
 
 <?php get_footer(); ?>

@@ -45,7 +45,7 @@ jQuery(document).ready(function($) {
 
 
 jQuery(document).ready(function($) {
-    jQuery(".btn--options").click(function() {
+    jQuery(".btn--options,.btn--open-search").click(function() {
         jQuery(".mobile-sidebar-option").toggleClass('mobile-sidebar-option--active');
         jQuery(".mobile-sidebar-option__modal").toggleClass('mobile-sidebar-option__modal--active');
         jQuery(".mobile-sidebar-option__sidebar").toggleClass(' mobile-sidebar-option__sidebar--slide');
@@ -112,5 +112,14 @@ jQuery(document).ready(function($) {
         jQuery(".navbar__full-desktop").removeClass('active--one');
         jQuery(".navbar__full-desktop").removeClass('active--two');
         jQuery(".navbar__full-desktop").removeClass('active--three');
+    });
+});
+
+
+
+jQuery(document).ready(function($) {
+    jQuery(".btn--open-search").click(function() {
+        jQuery(".seacch-control").toggleClass('seacch-control--open');
+
     });
 });

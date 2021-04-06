@@ -31,6 +31,12 @@ if ( $wtbx_page_nav !== '' || $wtbx_slider_nav !== '' ) {
 }
 ?>
 
+
+	<div id="searh-box" class="seacch-control">
+		<?php echo do_shortcode('[content_block slug=search]'); ?>
+	</div>
+
+
 	<div id="container" class="row-inner <?php echo trim(esc_attr('page-template-'.$wtbx_page_template . ' ' . ( is_active_sidebar($wtbx_layout['sidebar_widgetarea']) || $wtbx_layout['sidebar'] === 'no_sidebar' ? $wtbx_layout['sidebar'] : '') . $wtbx_layout['fullwidth'])); ?>">
 		<div id="content">
 
@@ -68,5 +74,33 @@ if ( $wtbx_page_nav !== '' || $wtbx_slider_nav !== '' ) {
 		<?php endif; ?>
 
 	</div><!-- #container -->
+
+
+<div class="mobile-sidebar-option__modal">
+    <div class="mobile-sidebar-option__closebox"> </div>
+
+    <!-- mobile-sidebar-option__sidebar -->
+    <div class="mobile-sidebar-option__sidebar">
+        <div class="mobile-sidebar-option__closebox--icon">
+                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="24" height="24" viewBox="0 0 24 24"><path d="M13.46,12L19,17.54V19H17.54L12,13.46L6.46,19H5V17.54L10.54,12L5,6.46V5H6.46L12,10.54L17.54,5H19V6.46L13.46,12Z"/></svg>
+        </div>
+
+		<div id="sidebar" class="mobile-sidebar-option__sidebar-holder" <?php echo esc_attr($wtbx_layout['sidebar_skin']), esc_attr($wtbx_layout['sidebar_sticky']); ?>">
+			<div class="page-sidebar" id="modal-box">
+				<div class="widget-area">
+					<?php dynamic_sidebar( 'wtbx_sidebar_1316382482322236' );?>
+				</div>
+			</div>
+		</div><!-- #sidebar -->
+    </div>
+        <!-- mobile-sidebar-option__sidebar -->
+
+</div>
+
+
+<div class="mobile-control">
+		<?php echo do_shortcode('[content_block slug=home-mobile-menu]'); ?>
+</div>
+
 
 <?php get_footer(); ?>
