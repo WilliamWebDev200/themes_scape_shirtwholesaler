@@ -38,7 +38,7 @@ wtbx_script_queue('sticky-kit');
 
 				<div class="shirtwolesaler-blog__title">
 					<h2 class="entry-title"><a href="<?php the_permalink(); ?>" title="<?php printf( esc_attr__( 'Continue reading: %s', 'scape' ), the_title_attribute( 'echo=0' ) ); ?>" rel="bookmark"><?php the_title(); ?></a></h2>
-					<div class="shirtwolesaler-blog__mobile-category">category: <?php the_category( ', ' ); ?></div>
+					<div class="shirtwolesaler-blog__mobile-category">category: <?php the_category( ' ' ); ?></div>
 				</div>
 
 				<div class="shirtwolesaler-blog__author">
@@ -93,7 +93,7 @@ wtbx_script_queue('sticky-kit');
 
 												<?php if ( !in_array('categories', $meta_array) ) : ?>
 													<span class="meta meta-category shirtwolesaler-blog__information--categories">
-														<span class="category-list"><?php the_category( ', ' ); ?></span>
+														<span class="category-list"><?php the_category( ' ' ); ?></span>
 													</span>
 												<?php endif; ?>
 												</div>

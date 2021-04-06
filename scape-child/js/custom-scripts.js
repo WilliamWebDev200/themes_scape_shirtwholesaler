@@ -75,8 +75,8 @@ jQuery(document).ready(function($) {
         jQuery(this).toggleClass('desktop-sidebar-option--open');
         jQuery(".shirtwolesaler-blog-detail__left").toggleClass('shirtwolesaler-blog-detail__left--sidebar-active');
         jQuery(".shirtwolesaler-blog-detail__right").toggleClass('shirtwolesaler-blog-detail__right--sidebar-active');
-        jQuery(".archive-bulk-apparel__left").toggleClass('archive-bulk-apparel__left--sidebar-active');
-        jQuery(".archive-bulk-apparel__right").toggleClass('archive-bulk-apparel__right--sidebar-active');
+        jQuery(".archive-shirtwolesaler__left").toggleClass('archive-shirtwolesaler__left--sidebar-active');
+        jQuery(".archive-shirtwolesaler__right").toggleClass('archive-shirtwolesaler__right--sidebar-active');
     });
 });
 

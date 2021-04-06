@@ -600,6 +600,18 @@ header#site-header {
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex; } }
+    .shirtwolesaler-blog__mobile-category a {
+      background: #FF6713;
+      display: inline-block;
+      padding: 0 10px;
+      font-size: 12px;
+      border-radius: 100px;
+      text-transform: capitalize;
+      color: #fff;
+      margin-right: 5px;
+      height: auto !important;
+      height: 24px !important;
+      margin-left: 5px; }
   .shirtwolesaler-blog__content {
     -webkit-box-flex: 0;
         -ms-flex: 0 0 70%;
@@ -679,7 +691,8 @@ header#site-header {
       overflow: hidden;
       width: 100px;
       height: 100px;
-      margin-right: 10px; }
+      margin-right: 10px;
+      display: none; }
       @media only screen and (max-width: 1100px) {
         .shirtwolesaler-blog__author-block--image-author .author-image {
           width: 40px;
@@ -708,7 +721,7 @@ header#site-header {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    padding: 0 7px; }
+    padding: 0; }
     @media only screen and (max-width: 480px) {
       .shirtwolesaler-blog__information {
         height: 25px;
@@ -725,6 +738,15 @@ header#site-header {
     @media only screen and (max-width: 1000px) {
       .shirtwolesaler-blog__information--categories {
         display: none; } }
+    .shirtwolesaler-blog__information--categories span.category-list a {
+      background: #FF6713;
+      display: inline-block;
+      padding: 0px 20px;
+      font-size: 18px;
+      border-radius: 100px;
+      text-transform: capitalize;
+      color: #fff;
+      margin-right: 10px; }
     @media only screen and (max-width: 768px) {
       .shirtwolesaler-blog__information--read-times {
         display: -webkit-box;
@@ -737,6 +759,8 @@ header#site-header {
     @media only screen and (max-width: 480px) {
       .shirtwolesaler-blog__information--read-times {
         font-size: 15px; } }
+    .shirtwolesaler-blog__information--comment, .shirtwolesaler-blog__information--likes {
+      display: none !important; }
   .shirtwolesaler-blog__dates {
     display: none !important; }
 
@@ -1033,15 +1057,89 @@ a.btn.btn--options {
 .archive .shirtwolesaler-blog {
   -webkit-box-align: start;
       -ms-flex-align: start;
-          align-items: flex-start; }
+          align-items: flex-start;
+  margin-left: 0 !important; }
   .archive .shirtwolesaler-blog__dates {
     display: block !important;
     margin-right: 20px; }
   .archive .shirtwolesaler-blog__media {
     display: none; }
+  @media only screen and (max-width: 480px) {
+    .archive .shirtwolesaler-blog {
+      padding: 14px; } }
+.archive .shirtwolesaler-blog__content {
+  padding: 0; }
+.archive #page-header {
+  margin-top: 0; }
 
 .archive-shirtwolesaler {
-  max-width: 1400px !important; }
+  max-width: 1400px !important;
+  max-width: 1400px !important;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+  .archive-shirtwolesaler__right {
+    display: none !important;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .archive-shirtwolesaler__right--sidebar-active {
+      -webkit-box-flex: 0;
+          -ms-flex: 0 0 30%;
+              flex: 0 0 30%;
+      max-width: 30%;
+      display: block !important; }
+      @media only screen and (max-width: 1000px) {
+        .archive-shirtwolesaler__right--sidebar-active {
+          display: none !important; } }
+  .archive-shirtwolesaler__left {
+    font-family: "Poppins", sans-serif !important;
+    -webkit-box-flex: 0 !important;
+        -ms-flex: 0 0 100% !important;
+            flex: 0 0 100% !important;
+    max-width: 100% !important;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out; }
+    .archive-shirtwolesaler__left .post-media.wtbx-reveal-cont.wtbx_preloader_cont {
+      margin-bottom: 0px; }
+    .archive-shirtwolesaler__left--sidebar-active {
+      -webkit-box-flex: 0 !important;
+          -ms-flex: 0 0 70% !important;
+              flex: 0 0 70% !important;
+      max-width: 70% !important; }
+      @media only screen and (max-width: 1000px) {
+        .archive-shirtwolesaler__left--sidebar-active {
+          -webkit-box-flex: 0 !important;
+              -ms-flex: 0 0 100% !important;
+                  flex: 0 0 100% !important;
+          max-width: 100% !important; } }
+    .archive-shirtwolesaler__left .wtbx_column_wrapper.clearfix .wtbx_column_content {
+      padding: 0 !important; }
+    .archive-shirtwolesaler__left h2,
+    .archive-shirtwolesaler__left h1 {
+      margin: 0;
+      font-size: 1.9em;
+      font-family: "Poppins", sans-serif !important; }
+      @media only screen and (max-width: 768px) {
+        .archive-shirtwolesaler__left h2,
+        .archive-shirtwolesaler__left h1 {
+          font-size: 1.2em; } }
+      @media only screen and (max-width: 480px) {
+        .archive-shirtwolesaler__left h2,
+        .archive-shirtwolesaler__left h1 {
+          font-size: 1em; } }
+    .archive-shirtwolesaler__left p {
+      font-family: "Poppins", sans-serif !important;
+      font-size: 18px;
+      color: #000;
+      line-height: 24px;
+      margin-top: 0;
+      margin-bottom: 10px; }
+      @media only screen and (max-width: 480px) {
+        .archive-shirtwolesaler__left p {
+          font-size: 13px;
+          line-height: 20px; } }
+  .archive-shirtwolesaler__wrapper {
+    padding: 0 !important; }
 
 .mobile-sidebar-option {
   display: none; }

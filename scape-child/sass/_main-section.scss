@@ -718,6 +718,19 @@ header#site-header {
         @media only screen and (max-width: 1000px) {
             display: flex;
         }
+        a {
+            background: $color-secondary;
+            display: inline-block;
+            padding: 0 10px;
+            font-size: 12px;
+            border-radius: 100px;
+            text-transform: capitalize;
+            color: $color-white;
+            margin-right: 5px;
+            height: auto !important;
+            height: 24px !important;
+            margin-left: 5px;
+        }
     }
     &__content {
         flex: 0 0 70%;
@@ -788,6 +801,7 @@ header#site-header {
                 width: 100px;
                 height: 100px;
                 margin-right: 10px;
+                display: none;
                 @media only screen and (max-width: 1100px) {
                     width: 40px;
                     height: 40px;
@@ -816,7 +830,7 @@ header#site-header {
     &__information {
         display: flex;
         align-items: center;
-        padding: 0 7px;
+        padding: 0;
         @media only screen and (max-width: 480px) {
             height: 25px;
             font-size: 15px;
@@ -832,6 +846,18 @@ header#site-header {
             @media only screen and (max-width:1000px) {
                 display: none;
             }
+            span.category-list {
+                a {
+                    background: $color-secondary;
+                    display: inline-block;
+                    padding: 0px 20px;
+                    font-size: 18px;
+                    border-radius: 100px;
+                    text-transform: capitalize;
+                    color: $color-white;
+                    margin-right: 10px;
+                }
+            }
         }
         &--read-times {
             @media only screen and (max-width: 768px) {
@@ -842,6 +868,10 @@ header#site-header {
             @media only screen and (max-width: 480px) {
                 font-size: 15px;
             }
+        }
+        &--comment,
+        &--likes {
+            display: none !important;
         }
     }
     &__dates {
@@ -1194,6 +1224,7 @@ a.btn.btn--options {
 .archive {
     .shirtwolesaler-blog {
         align-items: flex-start;
+        margin-left: 0 !important;
         &__dates {
             display: block !important;
             margin-right: 20px;
@@ -1201,11 +1232,83 @@ a.btn.btn--options {
         &__media {
             display: none;
         }
+        @media only screen and (max-width:480px) {
+            padding: 14px;
+        }
+    }
+    .shirtwolesaler-blog__content {
+        padding: 0;
+    }
+    #page-header {
+        margin-top: 0;
     }
 }
 
 .archive-shirtwolesaler {
     max-width: 1400px !important;
+    max-width: 1400px !important;
+    display: flex;
+    &__right {
+        display: none !important;
+        @include transition;
+        &--sidebar-active {
+            flex: 0 0 30%;
+            max-width: 30%;
+            display: block !important;
+            @media only screen and (max-width: 1000px) {
+                display: none !important;
+            }
+        }
+    }
+    &__left {
+        font-family: $font-primary;
+        .post-media.wtbx-reveal-cont.wtbx_preloader_cont {
+            margin-bottom: 0px;
+        }
+        flex: 0 0 100% !important;
+        max-width: 100% !important;
+        @include transition;
+        &--sidebar-active {
+            flex: 0 0 70% !important;
+            max-width: 70% !important;
+            @media only screen and (max-width: 1000px) {
+                flex: 0 0 100% !important;
+                max-width: 100% !important;
+            }
+        }
+        .wtbx_column_wrapper.clearfix {
+            .wtbx_column_content {
+                padding: 0 !important;
+            }
+        }
+        h2,
+        h1 {
+            margin: 0;
+            font-size: 1.9em;
+            font-family: $font-primary;
+            @media only screen and (max-width: 768px) {
+                font-size: 1.2em;
+            }
+            @media only screen and (max-width:480px) {
+                font-size: 1em;
+            }
+        }
+        p {
+            font-family: $font-primary;
+            font-size: 18px;
+            color: $color-black;
+            line-height: 24px;
+            margin-top: 0;
+            margin-bottom: 10px;
+            @media only screen and (max-width: 480px) {
+                font-size: 13px;
+                line-height: 20px;
+            }
+        }
+    }
+    &__wrapper {
+        padding: 0 !important;
+    }
 }
 
 .mobile-sidebar-option {
