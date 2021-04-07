@@ -446,6 +446,12 @@ header#site-header {
     background: $color-white;
     color: $color-gray4;
     padding-top: 50px;
+    @media only screen and (max-width: 1000px) {
+        padding-bottom: 50px;
+    }
+    @media only screen and (max-width: 768px) {
+        padding-bottom: 35px;
+    }
     .wtbx_row_content.clearfix {
         max-width: 95%;
         @media only screen and (max-width: 600px) {
@@ -586,6 +592,17 @@ header#site-header {
         }
     }
     &__credit {
+        @media only screen and (max-width: 768px) {
+            p {
+                margin: 0 !important;
+            }
+        }
+        @media only screen and (max-width: 480px) {
+            p {
+                text-align: center !important;
+                font-size: 12px;
+            }
+        }
         @media only screen and (max-width: 600px) {
             .wtbx_text_element_inner {
                 p {
