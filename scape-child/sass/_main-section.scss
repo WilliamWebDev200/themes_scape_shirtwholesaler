@@ -450,7 +450,7 @@ header#site-header {
         padding-bottom: 50px;
     }
     @media only screen and (max-width: 768px) {
-        padding-bottom: 35px;
+        padding-bottom: 50px;
     }
     .wtbx_row_content.clearfix {
         max-width: 95%;
@@ -601,6 +601,9 @@ header#site-header {
             p {
                 text-align: center !important;
                 font-size: 12px;
+            }
+            .wtbx_column_wrapper.clearfix .wtbx_column_content {
+                padding: 0 10px !important;
             }
         }
         @media only screen and (max-width: 600px) {
