@@ -484,6 +484,13 @@ header#site-header {
         }
     }
     &__menu {
+        @media only screen and (max-width: 768px) {
+            .wtbx_inner_column_wrapper.clearfix {
+                .wtbx_inner_column_content {
+                    padding: 0 !important;
+                }
+            }
+        }
         h2.widgettitle {
             font-size: 20px;
             color: $color-black;
@@ -587,6 +594,13 @@ header#site-header {
                         color: $color-gray4;
                         display: block;
                     }
+                }
+            }
+        }
+        @media only screen and (max-width:768px) {
+            .wtbx_inner_column_wrapper.clearfix {
+                .wtbx_inner_column_content {
+                    padding: 0 !important;
                 }
             }
         }
