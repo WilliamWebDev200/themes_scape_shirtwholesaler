@@ -213,6 +213,14 @@ header#site-header {
             display: none;
             flex: 0 0 100%;
             max-width: 100%;
+            @media only screen and (max-width: 1100px) {
+                >div {
+                    border: 1px solid $color-gray4;
+                    padding: 10px;
+                    margin: 10px 0;
+                    border-radius: 12px;
+                }
+            }
             .wpb_single_image {
                 flex: 0 0 60px;
                 max-width: 60px;
