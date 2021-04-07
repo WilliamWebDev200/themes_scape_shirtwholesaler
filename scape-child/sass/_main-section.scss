@@ -433,6 +433,9 @@ header#site-header {
                     padding: 15px;
                     display: flex;
                     align-items: center;
+                    &:hover {
+                        color: $color-secondary !important;
+                    }
                     &:after {
                         width: 0;
                         height: 0;
@@ -514,6 +517,9 @@ header#site-header {
                     color: $color-gray4 !important;
                     font-family: $font-secondary;
                     font-size: 16px;
+                    &:hover {
+                        color: $color-secondary !important;
+                    }
                     &:before {
                         // content: '';
                         // width: 0;
@@ -532,6 +538,12 @@ header#site-header {
     &__text {
         .wtbx_inner_column_content {
             padding: 0 !important;
+        }
+        .wtbx_inner_column_wrapper.clearfix {
+            .wtbx_inner_column_content {
+                outline: 1px solid;
+                padding: 0 !important;
+            }
         }
         &--message,
         &--contact,
