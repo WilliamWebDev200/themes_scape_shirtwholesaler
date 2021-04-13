@@ -647,6 +647,34 @@ header#site-header {
             }
         }
     }
+    &__links {
+        @media only screen and (max-width: 1000px) {
+            .wtbx_inner_row_content_inner.clearfix {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .shirtwolesaler-footer__menu {
+                flex: 0 0 50%;
+                max-width: 50%;
+            }
+        }
+    }
+    &__bottom {
+        @media only screen and (max-width: 1000px) {
+            .wtbx_row_content_inner.clearfix {
+                display: flex;
+                flex-wrap: wrap;
+            }
+            .shirtwolesaler-footer__credit {
+                flex: 0 0 100%;
+                max-width: 100%;
+                div,
+                p {
+                    text-align: center !important;
+                }
+            }
+        }
+    }
 }
 
 .page-header-wrapper {
